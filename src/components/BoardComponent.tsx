@@ -13,7 +13,6 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
 
   useEffect(() => {
     highlightCells();
-    console.log(123);
   }, [selectedCell]);
 
   function setSelectedCellFunc(cell: Cell) {
