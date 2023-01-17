@@ -11,7 +11,7 @@ const CellComponent: FC<CellProps> = ({ cell, selected, setSelectedCell }) => {
       onClick={() => setSelectedCell(cell)}
       className={`cell ${cell.color} ${selected ? "selected" : ""}`}
       style={{
-        backgroundColor: cell.available && cell.figure ? "brown" : "",
+        backgroundColor: cell.available && cell.figure ? "green" : "",
       }}
     >
       {cell.available && !cell.figure && <div className="available"></div>}
